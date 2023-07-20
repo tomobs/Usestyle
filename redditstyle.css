@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name           Good'Ol Reddit More Compact
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    fuck u/spez
+@author         u/manymobs
+==/UserStyle== */
+@-moz-document domain("old.reddit.com")
+{
+
+	/*bottom*/
+	
+	.child,
+	.found,
+	.unvoted.entry
+	{
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+	}
+
+	.buttons.flat-list
+	{
+
+		height: 0px;
+		border: 1px solid #7A929D38;
+		opacity: 0;
+	}
+
+
+	.buttons.flat-list:hover
+	{
+
+		height: 20px;
+		opacity: 1;
+		font-size: 10px;
+	}
+	
+	/*hide sidebar*/
+	div.side
+	{
+
+		border: 1px solid #7003;
+		opacity: 0;
+		transition: opacity 2s;
+	}
+
+	div.side:hover
+	{
+		width: 300px;
+		border: 0px solid #F000;
+		opacity: 1;
+	}
+}
